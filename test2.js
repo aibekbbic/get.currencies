@@ -19,7 +19,7 @@ const minute = document.querySelector(".minute");
 function curr_time() {
   const d1 = new Date();
   date.innerText = d1.getDate() < 10 ? `0${d1.getDate()}` : d1.getDate();
-  month.innerText = d1.getMonth() < 10 ? `0${d1.getMonth()}` : d1.getMonth();
+  month.innerText = d1.getMonth() < 10 ? `${d1.getMonth()}` : d1.getMonth();
   year.innerText = d1.getFullYear();
   hour.innerText = d1.getHours() < 10 ? `0${d1.getHours()}` : d1.getHours();
   minute.innerText =
